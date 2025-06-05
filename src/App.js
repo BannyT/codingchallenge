@@ -7,6 +7,10 @@ const AREA = "Lowestoft";
 const API_URL = `https://app.wewantwaste.co.uk/api/skips/by-location?postcode=${POSTCODE}&area=${AREA}`;
 
 export default function App() {
+
+
+  // Initial state
+
   const [skips, setSkips] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,9 +19,10 @@ export default function App() {
 
 
 
-
+    // hook handling data from api
 
   useEffect(() => {
+
     async function fetchSkips() {
       try {
         setLoading(true);
@@ -34,7 +39,8 @@ export default function App() {
     fetchSkips();
   }, []);
 
-  console.log(skips)
+  // console.log(skips)
+
   const selectedSkip = skips.find((skip) => skip.id === selectedSkipId);
 
   if (loading)
@@ -82,6 +88,7 @@ export default function App() {
             className={`toggle-button ${viewMode === "list" ? "active" : ""}`}
             aria-pressed={viewMode === "list"}
           >
+
             {/* List Icon SVG */}
             <svg width="20" height="20" viewBox="0 0 24 24">
               <rect x="3" y="6" width="18" height="2" rx="1" fill="currentColor" />
@@ -142,6 +149,8 @@ export default function App() {
 }
 
 
+// skip card
+
 function SkipCard({ skip, isSelected, onSelect }) {
   return (
     <article
@@ -180,6 +189,8 @@ function SkipCard({ skip, isSelected, onSelect }) {
     </article>
   );
 }
+
+
 
 function SkipListItem({ skip, isSelected, onSelect }) {
   return (
