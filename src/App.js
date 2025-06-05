@@ -34,6 +34,7 @@ export default function App() {
     fetchSkips();
   }, []);
 
+  console.log(skips)
   const selectedSkip = skips.find((skip) => skip.id === selectedSkipId);
 
   if (loading)
@@ -59,8 +60,8 @@ export default function App() {
   return (
     <main className="page-wrapper" aria-label="Choose your skip size page">
       <div className="header">
-        <h1 className="page-title">Select Your Skip</h1>
-        <p className="page-subtitle">Available in {AREA} ({POSTCODE})</p>
+        <h1 className="page-title">Choose Your Skip Size</h1>
+        <p className="page-subtitle">Select the skip Size that best suites your needs</p>
 
         <div className="view-toggle">
           <button
@@ -118,14 +119,18 @@ export default function App() {
       <div className="footer">
         {selectedSkip && (
           <div className="selection-summary">
-            <p className="selected-skip-name">{selectedSkip.name}</p>
-            <p className="selected-skip-price">£{selectedSkip.price?.toFixed(2)}</p>
+            <p className="selected-skip-name">{selectedSkip.size} yard Skip</p>
+            <p className="selected-skip-price">£{selectedSkip.price_before_vat
+?.toFixed(2)}</p>
+            <p className="selected-skip-name">{selectedSkip.hire_period_days
+} day hire period</p>
           </div>
         )}
         <button
           disabled={!selectedSkip}
           onClick={() =>
-            alert(`You chose: ${selectedSkip.name} - £${selectedSkip.price?.toFixed(2)}`)
+            alert(`You chose: ${selectedSkip.name} - £${selectedSkip.price_before_vat
+              ?.toFixed(2)}`)
           }
           className={`continue-button ${!selectedSkip ? "disabled" : ""}`}
         >
@@ -159,9 +164,10 @@ function SkipCard({ skip, isSelected, onSelect }) {
         </svg>
       </div>
       <h2 className="card-title">{skip.name}</h2>
-      <p className="card-capacity">Holds approx. {skip.capacity}</p>
+      <p className="card-capacity">Holds approx. {skip.size} Yards</p>
       <div className="card-price-container">
-        <p className="card-price">£{skip.price?.toFixed(2)}</p>
+        <p className="card-price">£{skip.price_before_vat
+ ?.toFixed(2)}</p>
         <p className="card-vat">inc. VAT</p>
       </div>
       {isSelected && (
@@ -198,7 +204,7 @@ function SkipListItem({ skip, isSelected, onSelect }) {
       </div>
       <div className="list-item-content">
         <h2 className="list-item-title">{skip.name}</h2>
-        <p className="list-item-capacity">{skip.capacity}</p>
+        <p className="list-item-capacity">{skip.size}</p>
       </div>
       <div className="list-item-price">
         £{skip.price?.toFixed(2)}
