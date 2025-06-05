@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project: Front End – Interview Task
+ Overview
+This is a front-end project built as part of an interview assignment, showcasing a clean and modern pricing section using HTML, CSS, and JavaScript. The project demonstrates my ability to structure UI components, apply visual design principles, and write maintainable code using modern web development practices.
 
-## Available Scripts
+Approach
+Separation of Concerns
 
-In the project directory, you can run:
+I separated the HTML, CSS, and JavaScript into individual files (App.js, App.css) to improve clarity, modularity, and scalability.
 
-### `yarn start`
+Responsive Layout
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Used Flexbox to create a responsive grid that adapts across screen sizes (desktop, tablet, mobile).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ensured accessibility and readability by using semantic HTML and relative units for layout.
 
-### `yarn test`
+Modern Design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Implemented glassmorphism and soft UI effects to give the  cards a modern and appealing look.
 
-### `yarn build`
+Incorporated smooth transitions and hover effects to enhance interactivity and user engagement.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Modal popups
 
-### `yarn eject`
+Plan selection logic
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+API integrations (e.g., fetching real-time Data)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+File Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Interview-Main-Section
+├── App.js       # Main HTML and JS structure
+├── App.css        # Styles for layout and design
+└── README.md        # This explanation document
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Features
 
-## Learn More
+Fully responsive across devices
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ Modern UI with clean animations
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ Clear separation of structure, style, and behavior
 
-### Code Splitting
+Ready for further JavaScript enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Testing
+Manually tested on:
 
-### Analyzing the Bundle Size
+Chrome
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Firefox
 
-### Making a Progressive Web App
+Mobile viewport (responsive dev tools)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MY Final Thoughts
+This project reflects my design philosophy:
 
-### Advanced Configuration
+Keep things simple, clean, and scalable
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Use modern tools and best practices
 
-### Deployment
+Write readable and maintainable code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Thank you for the opportunity to showcase my skills.
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-------Tumusiime Barnabus (Banny)------------------
