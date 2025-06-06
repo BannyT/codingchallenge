@@ -41,7 +41,7 @@ export default function App() {
     fetchSkips();
   }, []);
 
-  console.log(skips)
+  // console.log(skips)
 
   const selectedSkip = skips.find((skip) => skip.id === selectedSkipId);
 
