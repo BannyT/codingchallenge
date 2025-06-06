@@ -1,69 +1,82 @@
-README.md
+# Front-End Interview Task – Skip Size Selector Redesign
 
-Project: Front End – Interview Task
- Overview
-This is a front-end project built as part of an interview assignment, showcasing a clean and modern pricing section using HTML, CSS, and JavaScript. The project demonstrates my ability to structure UI components, apply visual design principles, and write maintainable code using modern web development practices.
+## Overview
 
-Approach
-Separation of Concerns
+This project is a front-end redesign assignment for the “Choose Your Skip Size” page from [WeWantWaste](https://wewantwaste.co.uk/). It demonstrates my ability to build clean, responsive UI components with React, maintainable code structure, and modern design aesthetics.
 
-I separated the HTML, CSS, and JavaScript into individual files (App.js, App.css) to improve clarity, modularity, and scalability.
+## Tech Stack
 
-Responsive Layout
+- **React.js** (Functional Components + Hooks)
+- **CSS** (with Flexbox for layout)
+- **JavaScript **
 
-Used Flexbox to create a responsive grid that adapts across screen sizes (desktop, tablet, mobile).
+## Objectives
 
-Ensured accessibility and readability by using semantic HTML and relative units for layout.
+- Redesign the page to look **completely different** while retaining original functionality.
+- Make it **responsive** on both desktop and mobile.
+- Populate skip data dynamically via **API integration**.
+- Apply **modern design principles** (glassmorphism, soft UI, clean typography).
 
-Modern Design
+## Approach
 
-Implemented glassmorphism and soft UI effects to give the  cards a modern and appealing look.
+###  Planning
+- Sketched the layout on paper to visualize user flow and information hierarchy.
+- Defined component structure and planned responsive breakpoints.
 
-Incorporated smooth transitions and hover effects to enhance interactivity and user engagement.
+### Modularity
+- Separated logic (`App.js`) and styles (`App.css`) for better scalability.
+- Reusable component structure to allow future extension.
 
+### UI/UX Design
+- Implemented **glassmorphism** and **soft UI** for modern appeal.
+- Used **hover states**, **transitions**, and **shadows** for interactivity.
+- Ensured good **contrast, spacing**, and **font readability**.
 
+### Responsive Layout
+- Used **Flexbox and media queries** for mobile-first responsiveness.
+- Optimized layouts for desktop, tablet, and mobile screens.
 
-Modal popups
+### API Integration
+- I Consumed live skip data via:
+  `https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft`
 
-Plan selection logic
+### Features
+- Responsive grid layout for skip options
+- Selection logic with visual feedback
+- Modal handling (if applicable)
+- Loading/error states
 
-API integrations (e.g., fetching real-time Data)
+## File Structure
+├── App.js # Main React component
+├── App.css # Styling for layout and design
+└── README.md # Project explanation
 
-File Structure
+## Manual Testing
 
-Interview-Main-Section
-├── App.js       # Main HTML and JS structure
-├── App.css        # Styles for layout and design
-└── README.md        # This explanation document
+Tested across:
+- Chrome
+- Firefox
+- Mobile view (responsive dev tools)
 
-Features
+##Getting Started
 
-Fully responsive across devices
+Open your terminal in VsCode or your favorite code editor
 
- Modern UI with clean animations
+git clone https://github.com/BannyT/codingchallenge.git
+cd codingchallenge
+yarn install
+yarn start
 
- Clear separation of structure, style, and behavior
+ Final Thoughts
+    This project reflects my front-end development approach:
 
-Ready for further JavaScript enhancements
+    Keep it simple, elegant, and scalable
 
-Testing
-Manually tested on:
+    Prioritize clean UI and strong UX
 
-Chrome
+    Use modern tools and write maintainable code
 
-Firefox
+    Thank you for the opportunity to showcase my skills.
 
-Mobile viewport (responsive dev tools)
+     — Tumusiime Barnabus (Banny)
 
-MY Final Thoughts
-This project reflects my design philosophy:
-
-Keep things simple, clean, and scalable
-
-Use modern tools and best practices
-
-Write readable and maintainable code
-
-Thank you for the opportunity to showcase my skills.
-
--------Tumusiime Barnabus (Banny)------------------

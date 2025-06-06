@@ -22,6 +22,8 @@ export default function App() {
     // hook handling data from api
 
   useEffect(() => {
+      
+    // function to fetch skips from API End Point
 
     async function fetchSkips() {
       try {
@@ -149,7 +151,7 @@ export default function App() {
 }
 
 
-// skip card
+// skip card select
 
 function SkipCard({ skip, isSelected, onSelect }) {
   return (

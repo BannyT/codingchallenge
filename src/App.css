@@ -159,3 +159,8 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.card:hover, .list-item:hover {
+  border-color: #0047BB;
+  background-color: #f5faff;
+}
