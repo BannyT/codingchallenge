@@ -41,7 +41,7 @@ export default function App() {
     fetchSkips();
   }, []);
 
-  // console.log(skips)
+  console.log(skips)
 
   const selectedSkip = skips.find((skip) => skip.id === selectedSkipId);
 
@@ -129,8 +129,7 @@ export default function App() {
         {selectedSkip && (
           <div className="selection-summary">
             <p className="selected-skip-name">{selectedSkip.size} yard Skip</p>
-            <p className="selected-skip-price">£{selectedSkip.price_before_vat
-?.toFixed(2)}</p>
+            <p className="selected-skip-price">£{(selectedSkip.price_before_vat + selectedSkip.vat).toFixed(2)} </p>
             <p className="selected-skip-name">{selectedSkip.hire_period_days
 } day hire period</p>
           </div>
@@ -138,7 +137,7 @@ export default function App() {
         <button
           disabled={!selectedSkip}
           onClick={() =>
-            alert(`You chose: ${selectedSkip.name} - £${selectedSkip.price_before_vat
+            alert(`You chose: ${selectedSkip.postcode} - £${selectedSkip.price_before_vat
               ?.toFixed(2)}`)
           }
           className={`continue-button ${!selectedSkip ? "disabled" : ""}`}
@@ -177,9 +176,8 @@ function SkipCard({ skip, isSelected, onSelect }) {
       <h2 className="card-title">{skip.name}</h2>
       <p className="card-capacity">Holds approx. {skip.size} Yards</p>
       <div className="card-price-container">
-        <p className="card-price">£{skip.price_before_vat
- ?.toFixed(2)}</p>
-        <p className="card-vat">inc. VAT</p>
+        <p className="card-price">£{(skip.price_before_vat + skip.vat).toFixed(2)}</p>
+        <p className="card-vat">Inc.VAT</p>
       </div>
       {isSelected && (
         <div className="selected-badge">
